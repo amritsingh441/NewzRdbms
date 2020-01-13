@@ -55,7 +55,7 @@ Create the necessary DB schema (SQL Server) including tables, relationships and 
 
 [SampleData.pdf](/uploads/be2424488bdd781550a3a60b04305f2f/SampleData.pdf)
 
-### Write sql statements to carry out the below listed operations
+![SampleData](/uploads/39cc93b55bfd413f87746c34be88c393/SampleData.png)
 
 1. Retreive all the user profiles joined on or after 10-Dec-2019.
 2. Retreive the details of user 'Jack' along with all the news created by him.
