@@ -53,7 +53,6 @@ Create the necessary DB schema (SQL Server) including tables, relationships and 
 ​
 **Insert the rows into the created tables as per below snapshot**
 
-[SampleData.pdf](/uploads/be2424488bdd781550a3a60b04305f2f/SampleData.pdf)
 
 ![SampleData](/uploads/39cc93b55bfd413f87746c34be88c393/SampleData.png)
 
