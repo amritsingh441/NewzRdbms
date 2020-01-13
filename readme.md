@@ -48,13 +48,15 @@ Create the necessary DB schema (SQL Server) including tables, relationships and 
 ​
 ### Database diagram
 ** Create tables as per the below entity relationship
-​
+![Database_Diagram](/uploads/f76c1e0bedcb237ff87501edfd30b41e/Database_Diagram.JPG)
 
 ​
 **Insert the rows into the created tables as per below snapshot**
-​
+
+[SampleData.pdf](/uploads/be2424488bdd781550a3a60b04305f2f/SampleData.pdf)
+
 ### Write sql statements to carry out the below listed operations
-​
+
 1. Retreive all the user profiles joined on or after 10-Dec-2019.
 2. Retreive the details of user 'Jack' along with all the news created by him.
 3. Retreive all details of the user who created the News with newsId=103.
@@ -64,3 +66,12 @@ Create the necessary DB schema (SQL Server) including tables, relationships and 
 7. Update the contact number of userId='John' to '9192939495'.
 8. Update the title of the newsId=101 to 'IT industry growth can be seen in 2020'.
 9. Remove all the reminders belonging to the news created by Jack.
+10. Write a query to set a reminder for a particular news (Use Reminder and News tables - insert statement)
+11. Create a trigger to delete all matching records from News,UserProfile,User and Reminder table when 
+	1. A particular news is deleted from news table (all the matching records from News,UserProfile,User        and Reminder should be removed automatically)
+	2. A particular user is deleted from User table (all the matching notes should be removed automatically)
+	
+### Note
+
+1. This assignment is based on RDBMS concepts using MSQL platform, All the queries will run inside MYSQL workbench therofore mysql is required to work.
+2. Successful execution of queries locally inside MYSQL platform are mandatory to accept the solution of this assignment.
