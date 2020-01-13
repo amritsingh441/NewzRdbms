@@ -21,7 +21,7 @@
 ​
 ## Assignment Step Description
 ​
-Read the given set of questions and solve them by writing queries using SQL Server.
+Read the given set of questions and solve them by writing queries using MySQL.
 ​
 The estimated effort to complete this assignment is 2 - 3 hours
 ​
@@ -38,7 +38,7 @@ The estimated effort to complete this assignment is 2 - 3 hours
 ### Problem Statement
 ​
 News-app is used to explore and read the news. It is also used to manage news in your watchlist to read later.
-Create the necessary DB schema (SQL Server) including tables, relationships and add sample data into each table.
+Create the necessary DB schema (MySQL) including tables, relationships and add sample data into each table.
 ​
 ### Expected solution
 ​
