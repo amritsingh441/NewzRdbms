@@ -107,8 +107,8 @@ CREATE TRIGGER NEWS_BEFORE_DELETE
 BEFORE DELETE
 ON News FOR EACH ROW
 BEGIN
-DELETE FROM User WHERE User.userid =OLD.Createdby;
-    DELETE FROM UserProfile WHERE UserProfile.userid =OLD.Createdby;
+DELETE FROM User WHERE User.UserId =OLD.CreatedBy;
+    DELETE FROM UserProfile WHERE UserProfile.UserId =OLD.CreatedBy;
     DELETE FROM Reminders WHERE Reminders.NewsId =OLD.NewsId;
 END $$
 
@@ -121,7 +121,7 @@ BEFORE DELETE
 ON User FOR EACH ROW
 BEGIN
 	DELETE FROM Reminders WHERE Reminders.NewsId =
-    (SELECT News.newsid FROM News WHERE News.CreatedBy=OLD.UserID);
-    Delete FROM UserProfile WHERE UserProfile.userid =OLD.userid;
-    Delete FROM News WHERE News.Createdby =OLD.userid;
+    (SELECT News.NewsId FROM News WHERE News.CreatedBy=OLD.UserId);
+    Delete FROM UserProfile WHERE UserProfile.UserId =OLD.UserId;
+    Delete FROM News WHERE News.CreatedBy =OLD.UserId;
 END$$
