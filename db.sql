@@ -97,7 +97,7 @@ DELETE FROM Reminders WHERE NewsId IN (SELECT NewsId FROM News WHERE CreatedBy =
 
 /*Write a query to set a reminder for a particular news (Use Reminder and News tables - insert statement)*/
 INSERT INTO Reminders ( SCHEDULE, NewsId)
-SELECT  NOW(),news.newsId FROM Reminders rem , News news WHERE rem.NewsId=news.NewsId;
+SELECT  NOW(),news.NewsId FROM Reminders rem , News news WHERE rem.NewsId=news.NewsId;
 
 /*Create a trigger to delete all matching records from News,UserProfile,User and Reminder table when
 			A particular news is deleted from news table (all the matching records from News,UserProfile,User
